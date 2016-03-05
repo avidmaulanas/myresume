@@ -16,7 +16,7 @@ html.no-js lang="en"
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = favicon_link_tag 'favicon.png'
     = csrf_meta_tags
-    = analytics_init if GoogleAnalytics.valid_tracker?
+    / = analytics_init if GoogleAnalytics.valid_tracker?
     
   BODY id="top"
     = yield
