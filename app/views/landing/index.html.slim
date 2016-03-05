@@ -1,153 +1,154 @@
-/! header ==================================================
-header
-  .row
-    .top-bar
-      a.menu-toggle href="#" 
-        span Menu
-      .logo
-        a href="/"  Avid
-      nav#main-nav-wrap
-        ul.main-navigation
-          li.current
-            a.smoothscroll href="#intro" title=""  Home
-          li
-            a.smoothscroll href="#about" title=""  About
-          li
-            a.smoothscroll href="#resume" title=""  Resume
-          li
-            a.smoothscroll href="#contact" title=""  Contact
-    /! /top-bar
-  /! /row
-/! /header
-/! intro section ==================================================
-section#intro
-  .intro-overlay
-  .intro-content
+- cache 'header'
+  /! header ==================================================
+  header
     .row
+      .top-bar 
+        a.menu-toggle href="#" 
+          span Menu
+        .logo
+          a href="/"  Avid
+        nav#main-nav-wrap
+          ul.main-navigation
+            li.current
+              a.smoothscroll href="#intro" title=""  Home
+            li
+              a.smoothscroll href="#about" title=""  About
+            li
+              a.smoothscroll href="#resume" title=""  Resume
+            li
+              a.smoothscroll href="#contact" title=""  Contact
+      /! /top-bar
+    /! /row
+  /! /header
+  /! intro section ==================================================
+  section#intro
+    .intro-overlay
+    .intro-content
+      .row
+        .col-twelve
+          h5 Hello, World.
+          h1 It's nice to meet you.
+          a.button.stroke.smoothscroll href="#about" title=""  More About Me
+    /! /intro-content
+    ul.intro-social
+      li
+        a href="https://www.facebook.com/avidmaulanas" target="_blank"
+          i.fa.fa-facebook
+      li
+        a href="https://twitter.com/avidmaulanas" target="_blank"
+          i.fa.fa-twitter
+      li
+        a href="https://www.instagram.com/avidmaulanas" target="_blank" 
+          i.fa.fa-instagram
+      li
+        a href="https://github.com/avidmaulanas" target="_blank" 
+          i.fa.fa-github
+          
+    /! /intro-social
+  /! /intro
+  /! about section ==================================================
+  section#about
+    .row.section-intro
       .col-twelve
-        h5 Hello, World.
-        h1 It's nice to meet you.
-        a.button.stroke.smoothscroll href="#about" title=""  More About Me
-  /! /intro-content
-  ul.intro-social
-    li
-      a href="https://www.facebook.com/avidmaulanas" target="_blank"
-        i.fa.fa-facebook
-    li
-      a href="https://twitter.com/avidmaulanas" target="_blank"
-        i.fa.fa-twitter
-    li
-      a href="https://www.instagram.com/avidmaulanas" target="_blank" 
-        i.fa.fa-instagram
-    li
-      a href="https://github.com/avidmaulanas" target="_blank" 
-        i.fa.fa-github
-        
-  /! /intro-social
-/! /intro
-/! about section ==================================================
-section#about
-  .row.section-intro
-    .col-twelve
-      h5 About
-      h1 Let me introduce myself.
-      .intro-info
-        img alt=("Profile Picture") src="#{asset_path('profile-pic.jpg')}"
-        p.lead 
-          | Web programming is my passion. I love Ruby and Rails. It's make me happy to coding. 
-          br/
-          | The opportunity to learn new skills and work with new technologies is particularly attractive to me.
-  /! /section-intro
-  .row.about-content
-    .col-six.tab-full
-      h3 Profile
-      ul.info-list
-        li
-          strong Fullname:
-          span Avid Maulana Saputra
-        li
-          strong Job:
-          span Web Developer
-        li
-          strong Email:
-          span avidmaulanas@gmail.com
-      /! /info-list
-    .col-six.tab-full
-      h3 Skills
-      ul.skill-bars
-        li
-          .progress.percent90
-            span 90%
-          strong HTML5
-        li
-          .progress.percent85
-            span 70%
-          strong CSS3
-        li
-          .progress.percent70
-            span 75%
-          strong JQuery
-        li
-          .progress.percent95
-            span 95%
-          strong Ruby
-        li
-          .progress.percent75
-            span 85%
-          strong Ruby on Rails
-      /! /skill-bars
-  .row.button-section
-    .col-twelve
-      a.button.stroke.smoothscroll href="#contact" title=("Contact Me")  Contact Me
-/! /process
-/! resume Section ==================================================
-section#resume.grey-section
-  .row.section-intro
-    .col-twelve
-      h5 Resume
-      h1 More of my credentials.
+        h5 About
+        h1 Let me introduce myself.
+        .intro-info
+          img alt=("Profile Picture") src="#{asset_path('profile-pic.jpg')}"
+          p.lead 
+            | Web programming is my passion. I love Ruby and Rails. It's make me happy to coding. 
+            br/
+            | The opportunity to learn new skills and work with new technologies is particularly attractive to me.
+    /! /section-intro
+    .row.about-content
+      .col-six.tab-full
+        h3 Profile
+        ul.info-list
+          li
+            strong Fullname:
+            span Avid Maulana Saputra
+          li
+            strong Job:
+            span Web Developer
+          li
+            strong Email:
+            span avidmaulanas@gmail.com
+        /! /info-list
+      .col-six.tab-full
+        h3 Skills
+        ul.skill-bars
+          li
+            .progress.percent90
+              span 90%
+            strong HTML5
+          li
+            .progress.percent85
+              span 70%
+            strong CSS3
+          li
+            .progress.percent70
+              span 75%
+            strong JQuery
+          li
+            .progress.percent95
+              span 95%
+            strong Ruby
+          li
+            .progress.percent75
+              span 85%
+            strong Ruby on Rails
+        /! /skill-bars
+    .row.button-section
+      .col-twelve
+        a.button.stroke.smoothscroll href="#contact" title=("Contact Me")  Contact Me
+  /! /process
+  /! resume Section ==================================================
+  section#resume.grey-section
+    .row.section-intro
+      .col-twelve
+        h5 Resume
+        h1 More of my credentials.
 
-  /! /section-intro
-  .row.resume-timeline
-    .col-twelve.resume-header
-      h2 Work Experience
-    /! /resume-header
-    .col-twelve
-      .timeline-wrap
-        .timeline-block
-          .timeline-ico
-            i.fa.fa-briefcase
-          .timeline-header
-            h3 Web Developer
-            p January 2015 - Present
-          .timeline-content
-            h4 41Studio
-            p 41studio is a leading software development company that provides IT solutions for your business. 41studio focus on Ruby on Rails, iOS and Android applications. And I'm working as web developer focus on Ruby on Rails.
-        /! /timeline-block
-        .timeline-block
-          .timeline-ico
-            i.fa.fa-briefcase
-          .timeline-header
-            h3 Help & Support App
-            p January 2014 - January 2015
-          .timeline-content
-            h4 PT. INTENS
-            p The most leading and reliable Information and Communications Technology (ICT) solution provider in Indonesia. I was worked for help and support costumers to using application.
-        /! /timeline-block
-        .timeline-block
-          .timeline-ico
-            i.fa.fa-briefcase
-          .timeline-header
-            h3 Web Developer
-            p October 2011 - June 2014
-          .timeline-content
-            h4 PT. Sapua Edukasi
-            p Consultant and develop academic information system for college. 
-        /! /timeline-block
-      /! /timeline-wrap
-    /! /col-twelve
-  /! /resume-timeline
-/! /features
+    /! /section-intro
+    .row.resume-timeline
+      .col-twelve.resume-header
+        h2 Work Experience
+      /! /resume-header
+      .col-twelve
+        .timeline-wrap
+          .timeline-block
+            .timeline-ico
+              i.fa.fa-briefcase
+            .timeline-header
+              h3 Web Developer
+              p January 2015 - Present
+            .timeline-content
+              h4 41Studio
+              p 41studio is a leading software development company that provides IT solutions for your business. 41studio focus on Ruby on Rails, iOS and Android applications. And I'm working as web developer focus on Ruby on Rails.
+          /! /timeline-block
+          .timeline-block
+            .timeline-ico
+              i.fa.fa-briefcase
+            .timeline-header
+              h3 Help & Support App
+              p January 2014 - January 2015
+            .timeline-content
+              h4 PT. INTENS
+              p The most leading and reliable Information and Communications Technology (ICT) solution provider in Indonesia. I was worked for help and support costumers to using application.
+          /! /timeline-block
+          .timeline-block
+            .timeline-ico
+              i.fa.fa-briefcase
+            .timeline-header
+              h3 Web Developer
+              p October 2011 - June 2014
+            .timeline-content
+              h4 PT. Sapua Edukasi
+              p Consultant and develop academic information system for college. 
+          /! /timeline-block
+        /! /timeline-wrap
+      /! /col-twelve
+    /! /resume-timeline
+  /! /features
 
 /! contact ==================================================
 section#contact
@@ -192,56 +193,58 @@ section#contact
         br/
     /! /col-twelve
   /! /contact-form
-  .row.contact-info
-    .col-four.tab-full
-      .icon
-        i.icon-pin
-      h5 Where to find me
-      p
-        | Setra Mas Residence No. 5 - 7, 
-        br/
-        | Jl. Encep Kartawiria, 
-        br/
-        | Cimahi West Java - Indonesia
+  - cache 'contact'
+    .row.contact-info
+        .col-four.tab-full
+          .icon
+            i.icon-pin
+          h5 Where to find me
+          p
+            | Setra Mas Residence No. 5 - 7, 
+            br/
+            | Jl. Encep Kartawiria, 
+            br/
+            | Cimahi West Java - Indonesia
 
-    .col-four.tab-full.collapse
-      .icon
-        i.icon-mail
-      h5 Email Me At
-      p
-        | avidmaulanas@gmail.com
+        .col-four.tab-full.collapse
+          .icon
+            i.icon-mail
+          h5 Email Me At
+          p
+            | avidmaulanas@gmail.com
 
-    .col-four.tab-full
-      .icon
-        i.icon-phone
-      h5 Call Me At
-      p
-        | Phone: +62 85 228 399 177
+        .col-four.tab-full
+          .icon
+            i.icon-phone
+          h5 Call Me At
+          p
+            | Phone: +62 85 228 399 177
 
   /! /contact-info
 /! /contact
-/! footer ==================================================
-footer
-  .row
-    .col-six.tab-full.pull-right.social
-      ul.footer-social
-        li
-          a href="https://www.facebook.com/avidmaulanas" target="_blank"
-            i.fa.fa-facebook
-        li
-          a href="https://twitter.com/avidmaulanas" target="_blank"
-            i.fa.fa-twitter
-        li
-          a href="https://www.instagram.com/avidmaulanas" target="_blank" 
-            i.fa.fa-instagram
-    .col-six.tab-full
-      .copyright
-        span
-          | Design by
-          a href="http://www.styleshout.com/" target="_blank"  styleshout
-    #go-top
-      a.smoothscroll href="#top" title=("Back to Top") 
-        i.fa.fa-long-arrow-up
-  /! /row
+- cache 'footer'
+  /! footer ==================================================
+  footer
+    .row
+      .col-six.tab-full.pull-right.social
+        ul.footer-social
+          li
+            a href="https://www.facebook.com/avidmaulanas" target="_blank"
+              i.fa.fa-facebook
+          li
+            a href="https://twitter.com/avidmaulanas" target="_blank"
+              i.fa.fa-twitter
+          li
+            a href="https://www.instagram.com/avidmaulanas" target="_blank" 
+              i.fa.fa-instagram
+      .col-six.tab-full
+        .copyright
+          span
+            | Design by
+            a href="http://www.styleshout.com/" target="_blank"  styleshout
+      #go-top
+        a.smoothscroll href="#top" title=("Back to Top") 
+          i.fa.fa-long-arrow-up
+    /! /row
 #preloader
   #loader
