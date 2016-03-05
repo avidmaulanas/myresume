@@ -85,4 +85,7 @@ Rails.application.configure do
     user_name: ENV['MAILER_USERNAME'],
     password: ENV['MAILER_PASSWORD']
   }
+  
+  # replace this with your tracker code
+  GA.tracker = "UA-74699678-1"
 end

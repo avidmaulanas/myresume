@@ -54,3 +54,4 @@ end
 gem 'slim-rails'
 gem 'simple_form'
 gem 'dotenv'
+gem 'google-analytics-rails'
