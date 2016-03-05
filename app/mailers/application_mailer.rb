@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "from@myportfolio.com"
+  default from: '"MyResume" <no-reply@myresume.com>'
   layout 'mailer'
 end
