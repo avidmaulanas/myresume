@@ -77,6 +77,18 @@
         h3 Skills
         ul.skill-bars
           li
+            .progress.percent90
+              span 90%
+            strong HTML5
+          li
+            .progress.percent85
+              span 70%
+            strong CSS3
+          li
+            .progress.percent70
+              span 75%
+            strong JQuery
+          li
             .progress.percent95
               span 95%
             strong Ruby
@@ -84,19 +96,6 @@
             .progress.percent75
               span 90%
             strong Ruby on Rails
-          li
-            .progress.percent90
-              span 90%
-            strong HTML5
-          li
-            .progress.percent85
-              span 70%
-            strong CSS
-          li
-            .progress.percent70
-              span 75%
-            strong JQuery
-          
         /! /skill-bars
     .row.button-section
       .col-twelve
@@ -123,7 +122,7 @@
               h3 Web Developer
               p January 2015 - Present
             .timeline-content
-              h4 41studio
+              h4 41Studio
               p 41studio is a leading software development company that provides IT solutions for your business. 41studio focus on Ruby on Rails, iOS and Android applications. And I'm working as web developer focus on Ruby on Rails.
           /! /timeline-block
           .timeline-block
@@ -238,9 +237,6 @@ section#contact
           li
             a href="https://www.instagram.com/avidmaulanas" target="_blank" 
               i.fa.fa-instagram
-          li
-            a href="https://github.com/avidmaulanas" target="_blank" 
-              i.fa.fa-github
       .col-six.tab-full
         .copyright
           span
