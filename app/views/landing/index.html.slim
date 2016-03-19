@@ -162,7 +162,7 @@ section#contact
   .row.contact-form
     .col-twelve
       /! form
-      = simple_form_for(:contact, url: contact_send_path, html: {id: "contactForm"}) do |f|
+      = simple_form_for(:message, url: contact_send_path, html: {id: "contactForm"}) do |f|
         .form-field
           = f.input :name, label: false, required: true, input_html: { id: "contactName", placeholder: "Name", minlength: "2"}
 

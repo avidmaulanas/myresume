@@ -47,11 +47,13 @@ end
 
 group :production do
 	gem 'rails_12factor'
-	gem 'puma'
-	gem 'pg'
+	gem 'puma'	
 end
 
+gem 'pg'
 gem 'slim-rails'
 gem 'simple_form'
 gem 'dotenv'
 gem 'google-analytics-rails'
+gem 'devise'
+gem 'activeadmin', github: 'activeadmin'

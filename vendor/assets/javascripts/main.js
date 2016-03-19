@@ -215,24 +215,8 @@
   /*---------------------------------------------------- */
 	/*	contact form
 	------------------------------------------------------ */
-	// $( "#contactPhone" ).rules( "add", {
-	//   required: true,
-	//   maxlength: 14,
-	//   match: '[0-9\-\(\)\s]+',
-	//   messages: {
-	//     required: "Required input"
-	//   }
-	// });
-
 	/* local validation */
 	$('#contactForm').validate({
-		// rules: {
-		// 		'contact[name]':
-  //       'contact[phone]': {
-  //           matches: '[0-9\-\(\)\s]+',
-  //           required: true
-  //       }
-  //   },
 		/* submit via ajax */
 		submitHandler: function(form) {
 
@@ -268,7 +252,7 @@
 
 		      	sLoader.fadeOut(); 
 		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+		        $('#message-warning').fadeIn();
 
 		      }
 

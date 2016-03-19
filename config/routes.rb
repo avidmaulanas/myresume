@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   root to: 'landing#index'
   get 'contact', to: 'greeting#index'
-  post 'contact/send', to: 'greeting#sendme'
+  post 'contact/send', to: 'greeting#do_send'
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
