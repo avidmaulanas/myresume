@@ -1,4 +1,6 @@
 ActiveAdmin.register Message do
+  menu priority: 1
+
   permit_params :name, :email, :phone, :message
 
   index do
