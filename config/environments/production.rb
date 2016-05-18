@@ -81,9 +81,10 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: ENV['MAILER_ADDRESS'],
-    port: 465, #587,
+    port: 587,
     user_name: ENV['MAILER_USERNAME'],
-    password: ENV['MAILER_PASSWORD']
+    password: ENV['MAILER_PASSWORD'],
+    authentication: :plain
   }
   
   # replace this with your tracker code
