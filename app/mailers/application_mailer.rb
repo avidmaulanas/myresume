@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: '"MyResume" <no-reply@myresume.com>'
+  default from: '"MyResume - Avid" <avid@41studio.com>'
   layout 'mailer'
 end

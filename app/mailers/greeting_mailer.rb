@@ -5,6 +5,6 @@ class GreetingMailer < ApplicationMailer
     @email   = params[:email]
     @phone   = params[:phone]
     @message = params[:message]
-    mail(from: 'avid@41studio.com', to: 'avidmaulanas@gmail.com', subject: "Greeting from #{@name}")
+    mail(to: 'avidmaulanas@gmail.com', subject: "Greeting from #{@name}")
   end
 end
