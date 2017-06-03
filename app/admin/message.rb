@@ -1,7 +1,7 @@
 ActiveAdmin.register Message do
-  menu priority: 1
+  menu priority: 3
 
-  permit_params :name, :email, :phone, :message
+  permit_params :full_name, :email, :phone, :message
 
   index do
     selectable_column
@@ -22,7 +22,7 @@ ActiveAdmin.register Message do
       f.input :name
       f.input :email
       f.input :phone
-      f.input :message  
+      f.input :message
     end
     f.actions
   end
