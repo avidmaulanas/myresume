@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.2.4'
+ruby '2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5.2'
+gem 'rails', '4.2.8'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -47,7 +47,7 @@ end
 
 group :production do
 	gem 'rails_12factor'
-	gem 'puma'	
+	gem 'puma'
 end
 
 gem 'pg'
