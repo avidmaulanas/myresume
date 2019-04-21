@@ -15,6 +15,8 @@
               a.smoothscroll href="#about" title=""  About
             li
               a.smoothscroll href="#contact" title=""  Contact
+            li
+              a href="/playgrounds" title=""  Playgrounds
 
       /! /top-bar
     /! /row
@@ -55,7 +57,7 @@
         .intro-info
           img alt=("Profile Picture") src="#{asset_path('profile-pic.jpg')}"
           p.lead
-            = simple_format(@landing_config.about_me)
+            = simple_format(@landing_config&.about_me)
     /! /section-intro
     .row.about-content
       .col-six.tab-full
@@ -63,13 +65,13 @@
         ul.info-list
           li
             strong Fullname:
-            span= @landing_config.full_name
+            span= @landing_config&.full_name
           li
             strong Job:
-            span= @landing_config.job_title
+            span= @landing_config&.job_title
           li
             strong Email:
-            span= @landing_config.email
+            span= @landing_config&.email
         /! /info-list
       .col-six.tab-full
         h3 Skills
@@ -135,19 +137,19 @@ section#contact
           .icon
             i.icon-pin
           h5 Where to find me
-          = simple_format(@landing_config.address)
+          = simple_format(@landing_config&.address)
 
         .col-four.tab-full.collapse
           .icon
             i.icon-mail
           h5 Email Me At
-          p= @landing_config.email
+          p= @landing_config&.email
 
         .col-four.tab-full
           .icon
             i.icon-phone
           h5 Call Me At
-          p= @landing_config.phone
+          p= @landing_config&.phone
 
   /! /contact-info
 /! /contact

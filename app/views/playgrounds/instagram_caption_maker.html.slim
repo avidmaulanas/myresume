@@ -1,0 +1,51 @@
+section
+  = link_to "Back", playgrounds_path
+
+section
+  h1 Instagram Caption Maker
+  p Easy add new line. Convert, copy and paste!
+
+section
+  .content
+    = text_area_tag :content, nil, rows: 15, cols: 50
+  .convert
+    = button_tag "Convert", class: "btn-convert"
+    | &nbsp;
+    = button_tag "Clear", class: "btn-clear"
+
+section
+  p
+    | Follow me on Instagram:
+    | &nbsp;
+    = link_to "@avidmaulanas", "https://www.instagram.com/avidmaulanas", target: "_blank", style: "text-decoration:none;"
+
+- content_for :javascripts do
+  javascript:
+    $('.btn-convert').on('click', function(){
+      convertContent();
+    });
+
+    $('.btn-clear').on('click', function(){
+      clearContent();
+    });
+
+    function convertContent(){
+      var content = $('#content').val();
+
+      // convert line break
+      content = content.replace(/(?:\r\n|\r|\n)/g, "\u2063\n");
+
+      // replace content
+      $('#content').val(content);
+
+      // select all content
+      $('#content').select();
+
+      // execute copy command
+      document.execCommand('copy');
+    }
+
+    function clearContent(){
+      $('#content').val('');
+    }
+
