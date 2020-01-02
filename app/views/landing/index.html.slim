@@ -133,11 +133,11 @@ section#contact
   /! /contact-form
   - cache 'contact'
     .row.contact-info
-        .col-four.tab-full
-          .icon
-            i.icon-pin
-          h5 Where to find me
-          = simple_format(@landing_config&.address)
+        -#.col-four.tab-full
+        -#  .icon
+        -#    i.icon-pin
+        -#  h5 Where to find me
+        -#  = simple_format(@landing_config&.address)
 
         .col-four.tab-full.collapse
           .icon
@@ -145,11 +145,11 @@ section#contact
           h5 Email Me At
           p= @landing_config&.email
 
-        .col-four.tab-full
-          .icon
-            i.icon-phone
-          h5 Call Me At
-          p= @landing_config&.phone
+        -#.col-four.tab-full
+        -#  .icon
+        -#    i.icon-phone
+        -#  h5 Call Me At
+        -#  p= @landing_config&.phone
 
   /! /contact-info
 /! /contact
